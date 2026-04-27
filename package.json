@@ -1,0 +1,12 @@
+{
+  "name": "n1o-static",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "build:data": "node scripts/build-country-data.mjs",
+    "build:static": "node scripts/build-static.mjs",
+    "build": "npm run build:data && npm run build:static",
+    "check": "npm run build && node --check js/countries.generated.js && node --check js/index.js && node --check scripts/build-country-data.mjs && node --check scripts/build-static.mjs"
+}
+}

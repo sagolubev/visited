@@ -1,0 +1,40 @@
+name: Deploy static site
+
+on:
+  push:
+    branches:
+      - master
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: pages-deployment
+  cancel-in-progress: true
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout master
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+
+      - name: Build and check static site
+        run: npm run check
+
+      - name: Publish dist to deployment branch
+        uses: peaceiris/actions-gh-pages@v4
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_branch: deployment
+          publish_dir: ./dist
+          force_orphan: true
+          user_name: sergey
+          user_email: sergey.golubev@live.ru
+          commit_message: "ci: deploy static site"

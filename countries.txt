@@ -1,0 +1,36 @@
+# n1o.ru country/city source
+# Format:
+# country | Country label | Capital/node label | latitude | longitude
+# city    | City label    | Country label      | latitude | longitude
+#
+# Lines starting with # are ignored. Edit this file, then run: npm run build
+
+country | Russia | Moscow | 55.7558 | 37.6173
+country | Egypt | Cairo | 30.0444 | 31.2357
+country | China | Beijing | 39.9042 | 116.4074
+country | Cyprus | Nicosia | 35.1856 | 33.3823
+country | North Cyprus | North Nicosia | 35.1983 | 33.3631
+country | Thailand | Bangkok | 13.7563 | 100.5018
+country | Ukraine | Kyiv | 50.4501 | 30.5234
+country | Germany | Berlin | 52.52 | 13.405
+country | Austria | Vienna | 48.2082 | 16.3738
+country | India | New Delhi | 28.6139 | 77.209
+country | Serbia | Belgrade | 44.7866 | 20.4489
+country | Montenegro | Podgorica | 42.4304 | 19.2594
+country | Belarus | Minsk | 53.9006 | 27.559
+country | Georgia | Tbilisi | 41.7151 | 44.8271
+country | United Arab Emirates | Abu Dhabi | 24.4539 | 54.3773
+country | Qatar | Doha | 25.2854 | 51.531
+country | Bahrain | Manama | 26.2235 | 50.5876
+country | Turkey | Ankara | 39.9334 | 32.8597
+country | Moldova | Chisinau | 47.0105 | 28.8638
+country | Armenia | Yerevan | 40.1792 | 44.4991
+country | Azerbaijan | Baku | 40.4093 | 49.8671
+country | Oman | Muscat | 23.588 | 58.3829
+country | Uzbekistan | Tashkent | 41.2995 | 69.2401
+country | Kazakhstan | Astana | 51.1694 | 71.4491
+country | Maldives | Male | 4.1755 | 73.5093
+country | Bosnia and Herz. | Sarajevo | 43.8563 | 18.4131
+country | Sri Lanka | Sri Jayawardenepura Kotte | 6.8941 | 79.9025
+country | Jordan | Amman | 31.9539 | 35.9106
+city | Yuzhno-Sakhalinsk | Russia | 46.9592 | 142.738
